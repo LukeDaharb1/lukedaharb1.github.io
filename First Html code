@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+ <title>The Adventure</title>
+ <style>
+
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
+}
+
+.div {
+    width: 175px;
+    height: 1450px;
+    background-color: red;
+    -webkit-animation-name: box; 
+    -webkit-animation-duration: 4s; 
+    animation-name: box;
+    animation-duration: 10s;
+     animation-iteration-count: infinite;
+    margin-top: -700px;
+    float:left;
+    margin-left: -10px;
+}
+@-webkit-keyframes box {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: whitesmoke;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: red;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown a:hover {background-color: whitesmoke}
+
+.show {display:block;}     
+
+
+.p{
+ margin-top:-10px;
+    margin-left:640px;
+    font-family: Arial;
+    font-size:15px;
+    
+}
+.z{
+    margin-top: 50px;
+    margin-left: 500px;
+    
+}
+
+.o{
+    float:right;
+    margin-right: -200px;
+    margin-top:-300px;
+} 
+
+.a{
+    margin-left: 175px;
+    margin-top:300px;
+    max-width: 1475px;
+    overflow: auto;
+    background-color: white;
+    color: black;
+    padding-bottom: 5px;
+    padding-top:5px;
+    padding-left: 5px;
+    padding-right:5px;
+    height:450px;
+}
+
+.i{
+    margin-left:500px;
+    margin-top:-150px;
+}
+.t{
+    margin-left:800px;
+    margin-top:-110px;
+}
+    </style>
+</head>
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+<body background="HdMountain.jpg"> 
+
+<h class="Learn More">
+<button onclick="myFunction()" class="dropbtn">Menu</button>
+  <h id="myDropdown" class="dropdown-content">
+    <a href="#-Our Goal">Our Goal</a>
+    <a href="#-Who We Are">Who We Are</a>
+    <a href="#-How you can contact us">Contact Us</a>
+  </h>
+</h>
+
+<p class="z"><img src="run.png" style="width: 175px; height: 175px"></img></p>   
+<h1 class="p">Explore and learn:</h1>
+<p class="o"><img src="ad.png"style="width: 550px; height: 500"></img></p>
+<div class="div"></div>
+<p class="a">This Website is soley built to encourage others to be more active. We encourage others to go find an adventure whether alone or in a group, either way we know the experiance will be memerable for a simple hike to white water rafting. The creator of the site Luke Daharb created this website not only because it was his final but also because he saw the need for more activists in our thriving community.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet tempor sapien, eget vehicula urna iaculis quis. Donec a dui id orci vestibulum mattis id pellentesque massa. Cras viverra at purus sed maximus. Curabitur efficitur, eros non rhoncus luctus, nunc arcu imperdiet diam, in feugiat arcu lectus ut elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et leo non urna viverra imperdiet in sed sapien. Donec nec malesuada neque. Donec sodales justo nec orci tempor ullamcorper. In eu risus ullamcorper, cursus lorem rutrum, consequat nisi. Morbi at convallis massa. Vestibulum cursus massa ut enim sollicitudin imperdiet. Etiam pellentesque tristique lacus, ac porttitor eros molestie non. Aliquam commodo nulla non nulla cursus euismod.
+Maecenas sed turpis nec tellus rutrum lacinia. Vestibulum sagittis sollicitudin orci a mattis. Mauris tincidunt sit amet purus nec dictum. Donec rutrum tellus non dui tincidunt, id auctor arcu suscipit. Phasellus ultricies ipsum a ligula tincidunt, vel tincidunt justo pulvinar. Pellentesque vel nisi sem. Pellentesque sed arcu in turpis convallis rutrum sed eu ligula. Sed luctus est et elit scelerisque faucibus. Integer volutpat aliquet ante vel dignissim. Nulla sem lacus, varius sit amet egestas sed, viverra eu libero. Nulla malesuada, leo id aliquam tristique, justo magna feugiat nunc, sed dignissim turpis justo et quam. Nullam blandit cursus ipsum dictum tincidunt. Donec non tempor sapien. Nam posuere quam eros, nec volutpat nisi pharetra cursus.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet tempor sapien, eget vehicula urna iaculis quis. Donec a dui id orci vestibulum mattis id pellentesque massa. Cras viverra at purus sed maximus. Curabitur efficitur, eros non rhoncus luctus, nunc arcu imperdiet diam, in feugiat arcu lectus ut elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et leo non urna viverra imperdiet in sed sapien. Donec nec malesuada neque. Donec sodales justo nec orci tempor ullamcorper. In eu risus ullamcorper, cursus lorem rutrum, consequat nisi. Morbi at convallis massa. Vestibulum cursus massa ut enim sollicitudin imperdiet. Etiam pellentesque tristique lacus, ac porttitor eros molestie non. Aliquam commodo nulla non nulla cursus euismod.
+
+</p>
+<p class="i"><img src="insta.png"style="width: 100px; height: 100"></img></p>
+<p class="t"><img src="Tweet.png"style="width: 100px; height: 100"></img></p>
+
+</body>
+</html>
